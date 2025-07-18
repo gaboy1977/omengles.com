@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Omengles | One-on-One Cams</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="logo.jpeg" alt="Omengles Logo" />
+    <h1>Omengles</h1>
+    <p>One-on-One Video Chat. Instant Connections.</p>
+    <button class="start-button" onclick="startChat()">Start Chat</button>
+  </header>
+
+  <section class="info-section">
+    <h2>How It Works</h2>
+    <div class="steps">
+      <div class="step">📡 Connect</div>
+      <div class="step">🎥 Chat</div>
+      <div class="step">🔁 Repeat</div>
+    </div>
+  </section>
+
+  <video id="localVideo" autoplay muted playsinline></video>
+
+  <footer>
+    © 2025 Omengles. All rights reserved. | Privacy Policy
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
