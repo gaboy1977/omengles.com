@@ -1,0 +1,36 @@
+let queue = [];
+let activePairs = {};
+
+function findMatch(userSocket) {
+  // Check if someone is waiting
+  if (queue.length > 0) {
+    const partnerSocket = queue.shift();
+    
+    // Store the active pair
+    activePairs[userSocket.id] = partnerSocket.id;
+    activePairs[partnerSocket.id] = userSocket.id;
+
+    // Notify both users
+    userSocket.emit('matchFound', { partnerId: partnerSocket.id });
+    partnerSocket.emit('matchFound', { partnerId: userSocket.id });
+  } else {
+    queue.push(userSocket);
+    userSocket.emit('waitingForMatch');
+  }
+}
+
+function disconnectUser(socket) {
+  const partnerId = activePairs[socket.id];
+  
+  if (partnerId) {
+    const partnerSocket = io.sockets.sockets.get(partnerId);
+    if (partnerSocket) {
+      partnerSocket.emit('partnerDisconnected');
+    }
+    delete activePairs[partnerId];
+    delete activePairs[socket.id];
+  }
+
+  // Clean the queue
+  queue = queue.filter(s => s.id !== socket.id);
+}
