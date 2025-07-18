@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Omengles One-on-One Cams</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; background: #111; color: white; }
+    video { width: 45%; margin: 10px; border: 2px solid #444; }
+    button { padding: 10px 20px; margin-top: 20px; font-size: 16px; }
+  </style>
+</head>
+<body>
+  <h1>Welcome to Omengles</h1>
+  <video id="localVideo" autoplay muted></video>
+  <video id="remoteVideo" autoplay></video>
+  <br>
+  <button onclick="startChat()">Start Chat</button>
+
+  <script>
+    const localVideo = document.getElementById('localVideo');
+    const remoteVideo = document.getElementById('remoteVideo');
+    let peerConnection;
+
+    async function startChat() {
+      const stream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+      localVideo.srcObject = stream;
+
+      peerConnection = new RTCPeerConnection();
+      stream.getTracks().forEach(track => peerConnection.addTrack(track, stream));
+
+      peerConnection.ontrack = (event) => {
+        remoteVideo.srcObject = event.streams[0];
+      };
+
+      // For a real app, you'd connect to a signaling server here
+    }
+  </script>
+</body>
+</html>
