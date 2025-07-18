@@ -3,30 +3,40 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Omengles | One-on-One Cams</title>
+  <title>Omengles | Talk to the World</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
-    <img src="logo.jpeg" alt="Omengles Logo" />
-    <h1>Omengles</h1>
-    <p>One-on-One Video Chat. Instant Connections.</p>
-    <button class="start-button" onclick="startChat()">Start Chat</button>
+    <img src="omengles-logo.jpeg" alt="Omengles Logo" class="logo" />
+    <h1>Welcome to Omengles</h1>
+    <p>Random video chat. Meet someone new, anywhere in the world 🌍</p>
+    <button class="start-button" onclick="startChat()">Start Chatting</button>
   </header>
 
-  <section class="info-section">
-    <h2>How It Works</h2>
-    <div class="steps">
-      <div class="step">📡 Connect</div>
-      <div class="step">🎥 Chat</div>
-      <div class="step">🔁 Repeat</div>
-    </div>
-  </section>
+  <main>
+    <section class="how-it-works">
+      <h2>How It Works</h2>
+      <div class="steps">
+        <div class="step">🌐 Connect with a stranger</div>
+        <div class="step">🎥 Face-to-face video chat</div>
+        <div class="step">🔄 Meet someone new with one click</div>
+      </div>
+    </section>
 
-  <video id="localVideo" autoplay muted playsinline></video>
+    <section class="features">
+      <h2>Why Omengles?</h2>
+      <ul>
+        <li>⚡ Instant matching</li>
+        <li>🌍 Worldwide community</li>
+        <li>🛡️ Safe and anonymous</li>
+        <li>📱 Mobile-friendly</li>
+      </ul>
+    </section>
+  </main>
 
   <footer>
-    © 2025 Omengles. All rights reserved. | Privacy Policy
+    <p>© 2025 Omengles. All rights reserved.</p>
   </footer>
 
   <script src="script.js"></script>
