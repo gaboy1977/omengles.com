@@ -1,30 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Omengles — Coming Soon</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Omengles - Coming Soon</title>
     <style>
-      body {
-        background-image: url('https://your-background-image.jpg'); /* swap with preferred gritty/neutral texture */
-        background-size: cover;
-        background-position: center;
-      }
-      img.logo {
-        max-width: 180px;
-        margin: 0 auto;
-      }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f3f4f6;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            max-width: 500px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 2em;
+            margin-bottom: 0.5em;
+        }
+        p {
+            margin-bottom: 1em;
+        }
+        .email-input {
+            padding: 10px;
+            width: calc(100% - 22px);
+            box-sizing: border-box;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+  }
+        .subscribe-btn {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .subscribe-btn:hover {
+            background-color: #0056b3;
+        }
     </style>
-  </head>
-  <body class="flex items-center justify-center h-screen text-white bg-black bg-opacity-70">
-    <div class="text-center p-6 bg-black bg-opacity-60 rounded-xl shadow-lg max-w-md">
-      <img src="logo.png" alt="Omengles Logo" class="logo mb-4" />
-      <h1 class="text-4xl font-bold mb-3 tracking-wide">🌐 Omengles</h1>
-      <p class="text-lg mb-6">Global video chat redefined. Real connections. Coming soon.</p>
-      <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-full transition">
-        Notify Me
-      </button>
+</head>
+<body>
+    <div class="container">
+        <h1>Coming Soon</h1>
+        <p>Stay tuned for the launch of Omengles, your new favorite platform.</p>
+        <input type="email" class="email-input" placeholder="Enter your email for updates">
+        <button class="subscribe-btn">Notify Me</button>
     </div>
-  </body>
+</body>
 </html>
