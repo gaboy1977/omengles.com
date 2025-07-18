@@ -1,44 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Omengles | Talk to the World</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header>
-    <img src="omengles-logo.jpeg" alt="Omengles Logo" class="logo" />
-    <h1>Welcome to Omengles</h1>
-    <p>Random video chat. Meet someone new, anywhere in the world 🌍</p>
-    <button class="start-button" onclick="startChat()">Start Chatting</button>
-  </header>
-
-  <main>
-    <section class="how-it-works">
-      <h2>How It Works</h2>
-      <div class="steps">
-        <div class="step">🌐 Connect with a stranger</div>
-        <div class="step">🎥 Face-to-face video chat</div>
-        <div class="step">🔄 Meet someone new with one click</div>
-      </div>
-    </section>
-
-    <section class="features">
-      <h2>Why Omengles?</h2>
-      <ul>
-        <li>⚡ Instant matching</li>
-        <li>🌍 Worldwide community</li>
-        <li>🛡️ Safe and anonymous</li>
-        <li>📱 Mobile-friendly</li>
-      </ul>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Omengles. All rights reserved.</p>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Omengles — Coming Soon</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+      body {
+        background-image: url('https://your-background-image.jpg'); /* swap with preferred gritty/neutral texture */
+        background-size: cover;
+        background-position: center;
+      }
+      img.logo {
+        max-width: 180px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body class="flex items-center justify-center h-screen text-white bg-black bg-opacity-70">
+    <div class="text-center p-6 bg-black bg-opacity-60 rounded-xl shadow-lg max-w-md">
+      <img src="logo.png" alt="Omengles Logo" class="logo mb-4" />
+      <h1 class="text-4xl font-bold mb-3 tracking-wide">🌐 Omengles</h1>
+      <p class="text-lg mb-6">Global video chat redefined. Real connections. Coming soon.</p>
+      <button class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded-full transition">
+        Notify Me
+      </button>
+    </div>
+  </body>
 </html>
