@@ -10,7 +10,6 @@
     <div class="container">
         <header>
             <div class="logo">
-                <span class="circle"><span class="zero">0</span></span>
                 <span class="omengles">OMENGLES</span>
                 <span class="com">COM</span>
             </div>
@@ -18,24 +17,22 @@
         <main>
             <h1>Ready to Meet Someone New?</h1>
             <button class="start-btn">Start</button>
-            <h2>How It Works</h2>
             <div class="how-it-works">
-                <div class="step">
-                    <img src="connect-icon.png" alt="Connect Icon">
-                    <p>Connect</p>
+                <h2>How It Works</h2>
+                <div class="steps">
+                    <div class="step">
+                        <img src="https://via.placeholder.com/40" alt="Connect Icon">
+                        <p>Connect</p>
+                    </div>
+                    <div class="step">
+                        <img src="https://via.placeholder.com/40" alt="Chat Icon">
+                        <p>Chat</p>
+                    </div>
+                    <div class="step">
+                        <img src="https://via.placeholder.com/40" alt="Repeat Icon">
+                        <p>Repeat</p>
+                    </div>
                 </div>
-                <div class="step">
-                    <img src="chat-icon.png" alt="Chat Icon">
-                    <p>Chat</p>
-                </div>
-                <div class="step">
-                    <img src="repeat-icon.png" alt="Repeat Icon">
-                    <p>Repeat</p>
-                </div>
-            </div>
-            <div class="terms">
-                <p>By using the service, you agree to abide by our terms of use.</p>
-                <p>Keep your conversations anonymous and respectful.</p>
             </div>
             <p class="online-users">212 people online now</p>
         </main>
