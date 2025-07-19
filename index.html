@@ -3,13 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Omengles - Connect with New People</title>
+    <title>Omengles - Connecting People Online</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap">
 </head>
 <body>
     <header>
-        <nav>
-            <ul>
+        <nav class="container">
+            <div class="logo">
+                <a href="#">Omengles</a>
+            </div>
+            <ul class="nav-links">
                 <li><a href="#how-it-works">How it Works</a></li>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#about">About</a></li>
@@ -17,43 +21,50 @@
         </nav>
     </header>
     <main>
-        <section id="hero">
+        <section id="hero" class="container">
             <h1>Welcome to Omengles</h1>
-            <p>Connect with new people online</p>
+            <p>Connecting people online with ease</p>
             <div class="user-count">
                 <span id="user-count">1,234</span> users online
             </div>
         </section>
-        <section id="how-it-works">
+        <section id="how-it-works" class="container">
             <h2>How it Works</h2>
             <div class="steps">
                 <div class="step">
                     <img src="images/icons/user-icon.png" alt="User Icon">
-                    <p>Browse profiles</p>
+                    <h3>Browse Profiles</h3>
+                    <p>Discover new people with similar interests</p>
                 </div>
                 <div class="step">
                     <img src="images/icons/chat-icon.png" alt="Chat Icon">
-                    <p>Start chatting with new people</p>
+                    <h3>Start Chatting</h3>
+                    <p>Connect with people in real-time</p>
                 </div>
                 <div class="step">
                     <img src="images/icons/friends-icon.png" alt="Friends Icon">
-                    <p>Make new friends</p>
+                    <h3>Make Friends</h3>
+                    <p>Build meaningful relationships</p>
                 </div>
             </div>
         </section>
-        <section id="features">
+        <section id="features" class="container">
             <h2>Features</h2>
             <ul>
-                <li>Modern interface</li>
-                <li>Visual icons</li>
-                <li>Real-time user count</li>
+                <li><i class="fas fa-check"></i> Modern interface</li>
+                <li><i class="fas fa-check"></i> Real-time user count</li>
+                <li><i class="fas fa-check"></i> Secure and private</li>
             </ul>
         </section>
-        <section id="about">
+        <section id="about" class="container">
             <h2>About Omengles</h2>
-            <p>Omengles is a platform designed to connect new people online. Our goal is to provide a safe and welcoming environment for users to make new friends and connections.</p>
+            <p>Omengles is a platform designed to connect people online. Our goal is to provide a safe and welcoming environment for users to make new friends and connections.</p>
         </section>
     </main>
+    <footer class="container">
+        <p>&copy; 2023 Omengles. All rights reserved.</p>
+    </footer>
     <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
 </body>
 </html>
