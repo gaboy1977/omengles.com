@@ -34,15 +34,6 @@ header nav a {
     text-align: center;
 }
 
-#hero button {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 1em 2em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
 .user-count {
     margin-top: 20px;
 }
@@ -72,21 +63,6 @@ header nav a {
     margin-bottom: 10px;
 }
 
-#join form {
-    margin-top: 20px;
-}
-
-#join input {
-    padding: 1em;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-}
-
-#join button {
-    background-color: #4CAF50;
-    color: #fff;
-    padding: 1em 2em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+#about {
+    padding: 2em;
 }
