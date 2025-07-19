@@ -1,109 +1,92 @@
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
-    color: white;
     background-color: #000;
-}
-
-.header {
-    background: #111;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-}
-
-.header .logo {
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-.header nav a {
-    color: white;
-    margin: 0 10px;
-    text-decoration: none;
-}
-
-.logo-right img {
-    height: 40px;
-}
-
-.hero {
-    text-align: center;
-    padding: 50px 20px;
-    background: url('racetrack.jpg') no-repeat center center/cover;
-}
-
-.hero h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-}
-
-.hero p {
-    font-size: 1.2em;
-}
-
-.buttons {
-    margin: 20px 0;
-}
-
-.preview-btn, .subscribe-btn {
-    padding: 15px 30px;
-    font-size: 1em;
-    border: none;
-    margin: 10px;
-    cursor: pointer;
-}
-
-.preview-btn {
-    background: #000;
     color: #fff;
-}
-
-.subscribe-btn {
-    background: red;
-    color: #fff;
-}
-
-.countdown {
-    background: red;
-    padding: 10px;
-    margin-top: 20px;
-}
-
-.countdown p {
     margin: 0;
-    font-size: 1.1em;
-}
-
-.countdown h2 {
-    margin: 10px 0 0;
-}
-
-.why-subscribe {
-    padding: 30px;
-    text-align: center;
-}
-
-.why-subscribe ul {
-    list-style: none;
     padding: 0;
 }
 
-.why-subscribe li {
-    margin: 10px 0;
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    text-align: center;
 }
 
-.car-logos {
+header {
+    margin-bottom: 20px;
+}
+
+.logo {
     display: flex;
-    justify-content: space-evenly;
-    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    border: 2px solid #ff0000;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.zero {
+    color: #ff0000;
+    font-size: 24px;
+}
+
+.omengles {
+    font-size: 24px;
     font-weight: bold;
 }
 
-footer {
+.com {
+    color: #ff0000;
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+main h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.start-btn {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.how-it-works {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.step {
     text-align: center;
-    padding: 20px;
-    background-color: #111;
-    font-size: 0.9em;
+}
+
+.step img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 10px;
+}
+
+.terms {
+    font-size: 12px;
+    color: #ccc;
+    margin-bottom: 20px;
+}
+
+.online-users {
+    font-size: 16px;
+    color: #fff;
 }
