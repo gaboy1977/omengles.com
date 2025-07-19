@@ -1,16 +1,16 @@
-// script.js
-const userCountElement = document.querySelector('#user-count');
-const getStartedButton = document.querySelector('#get-started');
+// Update user count dynamically
+const userCountElement = document.getElementById('user-count');
+let userCount = 1234;
 
-if (userCountElement && getStartedButton) {
-  // Update user count
-  userCountElement.textContent = '100';
-
-  // Add event listener to get started button
-  getStartedButton.addEventListener('click', () => {
-    // Redirect to sign up page or open sign up modal
-    window.location.href = '/signup';
-  });
-} else {
-  console.error('Required elements not found in the DOM.');
+// Function to update user count
+function updateUserCount() {
+    userCountElement.textContent = userCount.toLocaleString();
 }
+
+// Simulate user count increment
+setInterval(() => {
+    userCount++;
+    updateUserCount();
+}, 10000); // Update every 10 seconds
+
+updateUserCount();
