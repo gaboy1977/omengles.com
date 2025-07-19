@@ -1,10 +1,10 @@
 // Update user count dynamically
 const userCountElement = document.getElementById('user-count');
-let userCount = 1234;
+let userCount = 212;
 
 // Function to update user count
 function updateUserCount() {
-    userCountElement.textContent = userCount.toLocaleString();
+    userCountElement.textContent = userCount;
 }
 
 // Simulate user count increment
