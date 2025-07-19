@@ -1,28 +1,46 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 header {
     background-color: #333;
     color: #fff;
     padding: 1em;
-    text-align: center;
 }
 
-header nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header nav ul li {
-    display: inline-block;
+.logo {
+    font-size: 24px;
+    font-weight: bold;
     margin-right: 20px;
 }
 
-header nav a {
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
     color: #fff;
     text-decoration: none;
 }
@@ -46,6 +64,7 @@ header nav a {
 
 .step {
     text-align: center;
+    margin: 20px;
 }
 
 .step img {
@@ -65,4 +84,12 @@ header nav a {
 
 #about {
     padding: 2em;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    clear: both;
 }
