@@ -27,6 +27,15 @@
     <p>Connecting people online with ease</p>
     <button class="start-btn">Get Started</button>
 </section>
+       <!-- Add this div to your HTML body -->
+<div id="popup-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); display: flex; justify-content: center; align-items: center; z-index: 1000;">
+    <div style="background-color: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+        <h2>Allow Access to Webcam and Microphone</h2>
+        <p>Omengles needs access to your webcam and microphone to function properly.</p>
+        <button id="allow-access-btn">Allow Access</button>
+        <button id="deny-access-btn">Deny Access</button>
+    </div>
+</div>
         <section class="how-it-works container">
             <h2>How it Works</h2>
             <div class="steps">
