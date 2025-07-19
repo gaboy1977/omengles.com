@@ -8,34 +8,35 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <div class="logo">
-                <span class="omengles">OMENGLES</span>
-                <span class="com">COM</span>
-            </div>
-        </header>
-        <main>
-            <h1>Ready to Meet Someone New?</h1>
+        <div class="logo">
+            <h1>OMENGLES<span class="com">COM</span></h1>
+        </div>
+        <div class="tagline">
+            <h2>Ready to Meet Someone New?</h2>
+        </div>
+        <div class="start-button">
             <button class="start-btn">Start</button>
-            <div class="how-it-works">
-                <h2>How It Works</h2>
-                <div class="steps">
-                    <div class="step">
-                        <img src="https://via.placeholder.com/40" alt="Connect Icon">
-                        <p>Connect</p>
-                    </div>
-                    <div class="step">
-                        <img src="https://via.placeholder.com/40" alt="Chat Icon">
-                        <p>Chat</p>
-                    </div>
-                    <div class="step">
-                        <img src="https://via.placeholder.com/40" alt="Repeat Icon">
-                        <p>Repeat</p>
-                    </div>
+        </div>
+        <div class="how-it-works">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <img src="https://via.placeholder.com/40" alt="Connect Icon">
+                    <p>Connect</p>
+                </div>
+                <div class="step">
+                    <img src="https://via.placeholder.com/40" alt="Chat Icon">
+                    <p>Chat</p>
+                </div>
+                <div class="step">
+                    <img src="https://via.placeholder.com/40" alt="Repeat Icon">
+                    <p>Repeat</p>
                 </div>
             </div>
-            <p class="online-users">212 people online now</p>
-        </main>
+        </div>
+        <div class="online-users">
+            <p>212 people online now</p>
+        </div>
     </div>
 </body>
 </html>
