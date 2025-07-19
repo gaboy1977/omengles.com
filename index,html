@@ -4,91 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Omengles</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #000;
-            color: #fff;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-        }
-
-        .logo {
-            font-size: 36px;
-            font-weight: bold;
-            margin-bottom: 20px;
-            padding-top: 50px;
-        }
-
-        .com {
-            color: #ff0000;
-        }
-
-        .tagline {
-            font-size: 24px;
-            margin-bottom: 20px;
-        }
-
-        .start-btn {
-            background-color: #ff0000;
-            color: #fff;
-            border: none;
-            padding: 10px 20px;
-            font-size: 18px;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-bottom: 40px;
-        }
-
-        .how-it-works {
-            margin-bottom: 40px;
-        }
-
-        .steps {
-            display: flex;
-            justify-content: space-around;
-            margin-top: 20px;
-        }
-
-        .step {
-            text-align: center;
-        }
-
-        .step img {
-            width: 40px;
-            height: 40px;
-            margin-bottom: 10px;
-            border-radius: 50%;
-        }
-
-        .online-users {
-            font-size: 16px;
-            color: #fff;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="logo">OMENGLES<span class="com">COM</span></div>
-    <div class="tagline">Ready to Meet Someone New?</div>
+    <h2>Ready to Meet Someone New?</h2>
     <button class="start-btn">Start</button>
-    <div class="how-it-works">
-        <h2>How It Works</h2>
-        <div class="steps">
-            <div class="step">
-                <img src="https://via.placeholder.com/40" alt="Connect Icon">
-                <p>Connect</p>
-            </div>
-            <div class="step">
-                <img src="https://via.placeholder.com/40" alt="Chat Icon">
-                <p>Chat</p>
-            </div>
-            <div class="step">
-                <img src="https://via.placeholder.com/40" alt="Repeat Icon">
-                <p>Repeat</p>
-            </div>
-        </div>
+    <div class="chat-container">
+        <div class="chat-partner-name"></div>
+        <div class="chat-partner-profile-picture"></div>
+        <div class="chat-log"></div>
+        <input type="text" class="chat-input" placeholder="Type a message...">
+        <button class="send-btn">Send</button>
+        <button class="repeat-btn">Repeat</button>
+        <button class="end-btn">End Chat</button>
     </div>
-    <div class="online-users">212 people online now</div>
+    <script src="script.js"></script>
 </body>
 </html>
